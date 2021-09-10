@@ -21389,3 +21389,12 @@ $('.reviews__wrapper').slick({
 	arrows: true,
     autoplaySpeed: 2500,
   });
+
+  $('.room-lord__foto').slick({
+	// infinite: true,
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	variableWidth: true,
+	arrows: true,
+    autoplaySpeed: 2500,
+  });

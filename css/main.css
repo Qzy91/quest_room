@@ -7445,7 +7445,8 @@ a.text-dark:hover, a.text-dark:focus {
       opacity: 0.75; }
 
 body {
-  color: #fff; }
+  color: #fff;
+  background-color: #181B22; }
 
 .global__btn {
   width: 196px;
@@ -7455,7 +7456,7 @@ body {
   background: #FCC302;
   border-radius: 10px;
   border: none;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -7475,17 +7476,31 @@ body {
   letter-spacing: -0.015em;
   color: #FFFFFF; }
 
+header {
+  position: relative; }
+  header nav {
+    position: absolute; }
+
+.navbar-toggler i {
+  color: #fff !important; }
+
 .navbar__col {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 45px;
+  padding-top: 35px;
   font-family: "Montserrat";
   font-weight: bold;
   letter-spacing: -0.015em;
   text-transform: uppercase; }
+  .navbar__col__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
   .navbar__col__flex {
     display: flex;
     align-items: center;
@@ -7500,6 +7515,10 @@ body {
     line-height: 22px;
     margin-top: 38px; }
     .navbar__col__menu__item {
+      font-family: "Montserrat";
+      font-weight: bold;
+      letter-spacing: -0.015em;
+      text-transform: uppercase;
       padding: 3px 17px;
       border-bottom: 1px solid #F4F4F4; }
       .navbar__col__menu__item:hover {
@@ -7535,7 +7554,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left; }
+    align-items: left;
+    max-width: 670px; }
     .main__flex__title {
       margin-top: 270px;
       font-family: 'Exo 2';
@@ -7669,6 +7689,15 @@ body {
 
 .rooms {
   background: #181B22; }
+  .rooms__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .rooms__flex__col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%; }
   .rooms__header {
     display: flex;
     flex-direction: column;
@@ -7690,6 +7719,23 @@ body {
     height: 428px;
     border: 1px solid #2900FF;
     background: linear-gradient(180.18deg, rgba(0, 0, 0, 0.68) 12.55%, rgba(196, 196, 196, 0) 42.81%, rgba(0, 0, 0, 0.82) 92.86%), url("./../img/room1.png"); }
+    .rooms__item__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 11px; }
+      .rooms__item__header__new {
+        padding: 3px;
+        background-color: #1A00A4; }
+    .rooms__item__ppl {
+      padding-left: 11px; }
+    .rooms__item__adress {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      .rooms__item__adress__img {
+        padding-left: 11px;
+        padding-right: 5px; }
     .rooms__item__name {
       margin-top: 83px;
       width: 100%;
@@ -7799,9 +7845,12 @@ body {
       bottom: -2px; }
 
 .kvest-img {
-  height: auto;
-  width: 100%;
-  overflow: hidden; }
+  background-image: url("./../img/suh_kvest.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 564px;
+  width: auto; }
 
 .action {
   background: #181B22;
@@ -7813,6 +7862,21 @@ body {
     align-items: center; }
     .action__flex__title {
       padding: 100px 0; }
+  .action__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .action__row__mob {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%; }
+    .action__row__col {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
   .action__item {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(196, 196, 196, 0) 54.34%, rgba(0, 0, 0, 0.95) 100%), url("./../img/action1.png");
     width: 250px;
@@ -8021,6 +8085,10 @@ body {
     align-items: center;
     justify-content: center;
     padding: 100px 0; }
+  .contact__row {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .contact__item {
     display: flex;
     flex-direction: column;
@@ -8092,3 +8160,258 @@ body {
     font-size: 24px;
     line-height: 29px;
     color: #000000; }
+
+@media screen and (max-width: 1024px) {
+  .main__quest {
+    display: none; } }
+
+@media screen and (max-width: 540px) {
+  .global__btn {
+    width: 300px; }
+    .global__btn:hover {
+      color: #000; }
+  .global__subtitle {
+    font-size: 24px;
+    line-height: 108.5%;
+    letter-spacing: -0.015em;
+    color: #FFFFFF; }
+  .navbar__col {
+    padding-top: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%; }
+    .navbar__col__phone__number {
+      padding-left: 10px; }
+    .navbar__col__menu {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 38px; }
+      .navbar__col__menu__item {
+        padding: 3px 17px;
+        border-bottom: 1px solid #F4F4F4; }
+        .navbar__col__menu__item:hover {
+          border-bottom: 3px solid #FCC302; }
+  .main {
+    position: relative;
+    background: linear-gradient(0deg, rgba(24, 27, 34, 0.61) -19.67%, rgba(9, 24, 61, 0.5307) 81.95%), url("./../img/main__bg.png");
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 15px;
+    color: #fff; }
+    .main__quest {
+      display: none; }
+    .main__flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .main__flex__title {
+        margin-top: 48px;
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 108.5%;
+        letter-spacing: -0.015em; }
+      .main__flex__text {
+        margin-top: 12px;
+        font-size: 14px;
+        text-align: center; }
+      .main__flex__btn {
+        margin-top: 52px; }
+  .rooms__header {
+    padding: 25px 0; }
+    .rooms__header__subtitle {
+      margin-bottom: 5px; }
+    .rooms__header__text {
+      font-size: 14px; }
+  .rooms__item {
+    width: 145px;
+    height: 330px;
+    font-size: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .rooms__item__header {
+      padding: 3px; }
+      .rooms__item__header__new {
+        padding: 3px;
+        background-color: #1A00A4; }
+    .rooms__item__ppl {
+      padding-left: 3px; }
+    .rooms__item__adress {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      .rooms__item__adress__img {
+        padding-left: 11px;
+        padding-right: 5px; }
+    .rooms__item__name {
+      margin-top: 83px;
+      padding-bottom: 50px;
+      width: 100%;
+      font-size: 14px; }
+    .rooms__item button {
+      width: 130px;
+      height: 28px;
+      font-size: 10px; }
+    .rooms__item__info {
+      display: none; }
+  .regulations {
+    padding-bottom: 5px; }
+    .regulations__flex {
+      padding-bottom: 0px; }
+    .regulations__subtitle {
+      padding: 24px 0; }
+    .regulations__exclamation {
+      color: #1A00A4;
+      font-size: 28px; }
+    .regulations__item {
+      padding: 19px 36px;
+      font-family: 'Exo 2';
+      position: relative; }
+      .regulations__item__title {
+        padding-bottom: 9px;
+        font-size: 18px;
+        text-align: left; }
+      .regulations__item__text {
+        font-size: 18px; }
+      .regulations__item__border-bottom-right {
+        display: none; }
+      .regulations__item__border-bottom-left {
+        display: none; }
+      .regulations__item__border-right {
+        display: none; }
+      .regulations__item__circle {
+        display: none; }
+  .kvest-img {
+    height: 359px; }
+  .action {
+    padding-bottom: 0px; }
+    .action__flex__title {
+      padding: 24px 0; }
+    .action__row__col {
+      width: 50%; }
+    .action__item {
+      width: 147px;
+      height: 330px;
+      position: relative; }
+      .action__item:not(:last-child) {
+        margin-right: 15px; }
+      .action__item:not(:first-child) {
+        margin-left: 15px; }
+      .action__item__row {
+        width: 100%; }
+      .action__item__flex {
+        margin-top: 104px;
+        width: 100%; }
+        .action__item__flex__name {
+          height: auto;
+          width: 100%;
+          font-size: 18px; }
+        .action__item__flex__btn {
+          position: absolute;
+          left: 8px;
+          bottom: 22px; }
+          .action__item__flex__btn button {
+            width: 131px;
+            height: 28px; }
+  .reviews {
+    padding-bottom: 100px; }
+    .reviews__header {
+      padding: 24px 0; }
+    .reviews__wrapper {
+      position: relative; }
+      .reviews__wrapper__item {
+        width: 302px;
+        height: 218px;
+        margin: 15px; }
+        .reviews__wrapper__item__header {
+          display: flex;
+          margin: 7px;
+          justify-content: space-between;
+          font-family: 'Exo 2';
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          letter-spacing: -0.015em;
+          color: #F4F4F4; }
+          .reviews__wrapper__item__header__about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+            .reviews__wrapper__item__header__about__date {
+              margin-top: 10px;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              text-align: right;
+              letter-spacing: -0.015em; }
+          .reviews__wrapper__item__header__name {
+            line-height: 30px; }
+        .reviews__wrapper__item__text {
+          margin: 0 7px;
+          font-size: 14px; }
+        .reviews__wrapper__item__autor {
+          margin: 34px;
+          text-align: right; }
+  .arrows {
+    color: #F4F4F4;
+    display: flex; }
+    .arrows div {
+      font-size: 27;
+      line-height: 60px;
+      text-align: center;
+      margin-right: 11px;
+      margin-top: 37px;
+      width: 42px;
+      height: 42px;
+      background: #1A00A4;
+      border: 1px solid #F4F4F4;
+      box-sizing: border-box; }
+  .slick-slide {
+    width: 302px;
+    height: 218px;
+    margin: 15px; }
+  .contact {
+    padding-bottom: 24px; }
+    .contact__heder {
+      padding: 24px 0; }
+    .contact__row {
+      flex-direction: column;
+      text-align: center; }
+    .contact__item {
+      padding: 0 15px;
+      font-size: 18px; }
+      .contact__item__tel {
+        font-size: 21px; }
+  .map-qwest {
+    height: 361px; }
+    .map-qwest iframe {
+      height: 100%;
+      width: 100%; }
+  .footer {
+    background: #181B22;
+    padding: 25px 0; }
+    .footer__item__title {
+      font-size: 14px; }
+    .footer__item__row {
+      padding-top: 9px;
+      font-size: 12px; }
+    .footer__item__flex {
+      display: flex;
+      align-items: center;
+      font-size: 40px;
+      color: #1A00A4; }
+    .footer__contact {
+      display: none; }
+  .year {
+    height: 53px;
+    background: #F4F4F4; }
+    .year div {
+      font-size: 18px;
+      line-height: 24px; } }

@@ -7468,7 +7468,7 @@ body {
     color: #000; }
 
 .global__subtitle {
-  font-family: Exo 2;
+  font-family: 'Exo 2';
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -7484,6 +7484,9 @@ header {
 .navbar-toggler i {
   color: #fff !important; }
 
+.show {
+  transition: 0.3s all linear; }
+
 .navbar__col {
   display: flex;
   flex-direction: column;
@@ -7494,13 +7497,15 @@ header {
   font-family: "Montserrat";
   font-weight: bold;
   letter-spacing: -0.015em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: 0.3s all linear; }
   .navbar__col__main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; }
+    width: 100%;
+    transition: 0.3s all linear; }
   .navbar__col__flex {
     display: flex;
     align-items: center;
@@ -7513,21 +7518,24 @@ header {
   .navbar__col__menu {
     font-size: 18px;
     line-height: 22px;
-    margin-top: 38px; }
+    margin-top: 38px;
+    transition: 0.3s all linear; }
     .navbar__col__menu__item {
       font-family: "Montserrat";
       font-weight: bold;
       letter-spacing: -0.015em;
       text-transform: uppercase;
       padding: 3px 17px;
-      border-bottom: 1px solid #F4F4F4; }
+      border-bottom: 1px solid #F4F4F4;
+      transition: 0.3s all linear; }
       .navbar__col__menu__item:hover {
         border-bottom: 3px solid #FCC302; }
     .navbar__col__menu a {
       padding: 0; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #F4F4F4; }
+  color: #F4F4F4;
+  transition: 0.3s all linear; }
   .navbar-light .navbar-nav .nav-link:hover {
     color: #F4F4F4; }
 
@@ -7537,7 +7545,8 @@ header {
   height: 1080px;
   background-size: cover;
   background-position: top;
-  color: #fff; }
+  color: #fff;
+  transition: 0.3s all linear; }
   .main__cub {
     position: absolute;
     background-image: linear-gradient(180deg, rgba(24, 27, 34, 0) 0%, #181B22 100%), url("./../img/main__cub.jpg");
@@ -7658,7 +7667,12 @@ header {
   background: #181B22;
   padding-top: 55px;
   padding-bottom: 55px;
-  position: relative; }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .room-lord__col {
+    width: 50%; }
   .room-lord__foto img {
     width: 550px;
     height: 720px; }
@@ -7673,7 +7687,7 @@ header {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: bold;
-      font-size: 46px;
+      font-size: 42px;
       line-height: 59px; }
     .room-lord__info__text {
       padding-bottom: 32px;
@@ -8217,11 +8231,85 @@ header {
         line-height: 108.5%;
         letter-spacing: -0.015em; }
       .main__flex__text {
+        width: 90%;
         margin-top: 12px;
         font-size: 14px;
         text-align: center; }
       .main__flex__btn {
         margin-top: 52px; }
+  .modal-dialog__castom {
+    margin-top: -213px;
+    left: 50%;
+    top: 50%;
+    margin-left: -144px; }
+  .modal-content__castom {
+    width: 288px !important;
+    height: 346px !important; }
+  .modal-content__room {
+    width: 360px !important;
+    height: auto !important; }
+  .btn-close__room {
+    color: #fff !important;
+    background: transparent url("./../img/close.png") center/1em auto no-repeat !important; }
+  .modal-dialog__room {
+    margin-top: 0px;
+    margin-left: -170px;
+    left: 50%;
+    top: 2%; }
+  .modal__contact {
+    width: 100%;
+    height: 100%; }
+    .modal__contact__col-img {
+      display: none; }
+    .modal__contact__col-info {
+      width: 100%;
+      height: 100%; }
+      .modal__contact__col-info__input input {
+        width: 265px;
+        height: 48px;
+        margin: 12px;
+        padding: 17px;
+        font-size: 14px; }
+      .modal__contact__col-info__btn {
+        width: 265px;
+        height: 48px;
+        font-size: 14px; }
+  .room-lord__foto .slick-slide {
+    width: 290px !important;
+    height: auto !important; }
+  .room-prise {
+    font-size: 22px; }
+  .room-lord {
+    padding: 26px 10px;
+    flex-direction: column; }
+    .room-lord__col {
+      width: 100%; }
+    .room-lord__foto {
+      margin-bottom: 70px; }
+      .room-lord__foto img {
+        width: 100%;
+        height: auto; }
+    .room-lord__info {
+      padding-left: 0px; }
+      .room-lord__info__close {
+        position: absolute;
+        right: 10px;
+        top: 10px; }
+      .room-lord__info__title {
+        padding-bottom: 15px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px; }
+      .room-lord__info__text {
+        padding: 12px 5px;
+        font-size: 12px;
+        line-height: 16px; }
+      .room-lord__info .main__flex__btn {
+        margin: 0; }
+    .room-lord .rooms__item__info__locks {
+      font-size: 18px; }
   .rooms__header {
     padding: 25px 0; }
     .rooms__header__subtitle {
@@ -8359,20 +8447,57 @@ header {
         .reviews__wrapper__item__autor {
           margin: 34px;
           text-align: right; }
-  .arrows {
-    color: #F4F4F4;
-    display: flex; }
-    .arrows div {
-      font-size: 27;
-      line-height: 60px;
-      text-align: center;
-      margin-right: 11px;
-      margin-top: 37px;
-      width: 42px;
-      height: 42px;
-      background: #1A00A4;
-      border: 1px solid #F4F4F4;
-      box-sizing: border-box; }
+  .slick-prev {
+    left: 14px;
+    font-size: 0; }
+    .slick-prev::before {
+      font-size: 0;
+      content: '';
+      display: block;
+      top: 12px;
+      left: 13px;
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-left: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      transform: rotate(45deg); }
+      .slick-prev::before:hover {
+        border: 1px solid #fff;
+        background-color: #1A00A4; }
+      .slick-prev::before:focus {
+        border: 1px solid #fff;
+        background-color: #1A00A4; }
+  .slick-next {
+    left: 75px; }
+    .slick-next::before {
+      font-size: 0;
+      font-size: 0;
+      content: '';
+      display: block;
+      top: 12px;
+      left: 12px;
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-right: 3px solid #fff;
+      border-top: 3px solid #fff;
+      transform: rotate(45deg); }
+      .slick-next::before:hover {
+        border: 1px solid #fff;
+        background-color: #1A00A4; }
+  .room-lord .slick-arrow {
+    bottom: -60px; }
+  .reviews .slick-arrow {
+    bottom: -80px; }
+  .slick-arrow {
+    position: absolute;
+    top: auto;
+    height: 42px;
+    width: 42px; }
+  .arrows div {
+    margin-right: 11px;
+    margin-top: 37px; }
   .slick-slide {
     width: 302px;
     height: 218px;

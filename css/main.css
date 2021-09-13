@@ -7675,7 +7675,7 @@ header {
     .room-lord__info__close {
       position: absolute;
       right: 10px;
-      top: -35px; }
+      top: 10px; }
     .room-lord__info__title {
       padding-bottom: 32px;
       font-family: 'Montserrat';
@@ -7725,8 +7725,11 @@ header {
   .rooms__item {
     width: 266px;
     height: 428px;
-    border: 1px solid #2900FF;
-    background: linear-gradient(180.18deg, rgba(0, 0, 0, 0.68) 12.55%, rgba(196, 196, 196, 0) 42.81%, rgba(0, 0, 0, 0.82) 92.86%), url("./../img/room1.png"); }
+    border: 1px solid #2900FF; }
+    .rooms__item__lord {
+      background: linear-gradient(180.18deg, rgba(0, 0, 0, 0.68) 12.55%, rgba(196, 196, 196, 0) 42.81%, rgba(0, 0, 0, 0.82) 92.86%), url("./../img/room1.png"); }
+    .rooms__item__mission {
+      background: linear-gradient(180.18deg, rgba(0, 0, 0, 0.68) 12.55%, rgba(196, 196, 196, 0) 42.81%, rgba(0, 0, 0, 0.82) 92.86%), url("./../img/mission_bg.jpg"); }
     .rooms__item__header {
       display: flex;
       justify-content: space-between;
@@ -7862,7 +7865,8 @@ header {
 
 .modal-content__action-modal {
   width: 600px !important;
-  height: 300px !important; }
+  height: 300px !important;
+  border: none; }
 
 .btn-close__action-modal {
   color: #fff !important;

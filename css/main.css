@@ -7725,11 +7725,12 @@ header {
   .rooms__item {
     width: 266px;
     height: 428px;
-    border: 1px solid #2900FF; }
+    border: 1px solid #2900FF;
+    transition: 0.3s all linear; }
     .rooms__item__lord {
       background: linear-gradient(180.18deg, rgba(0, 0, 0, 0.68) 12.55%, rgba(196, 196, 196, 0) 42.81%, rgba(0, 0, 0, 0.82) 92.86%), url("./../img/room1.png"); }
     .rooms__item__mission {
-      background: linear-gradient(180.18deg, rgba(0, 0, 0, 0.68) 12.55%, rgba(196, 196, 196, 0) 42.81%, rgba(0, 0, 0, 0.82) 92.86%), url("./../img/mission_bg.jpg"); }
+      background: linear-gradient(180.18deg, rgba(0, 0, 0, 0.68) 12.55%, rgba(196, 196, 196, 0) 42.81%, rgba(0, 0, 0, 0.82) 92.86%), url("./../img/mission_bg.png"); }
     .rooms__item__header {
       display: flex;
       justify-content: space-between;
@@ -7792,6 +7793,8 @@ header {
         color: #FFFFFF; }
     .rooms__item:hover .rooms__item__name {
       color: #1A00A4; }
+    .rooms__item:hover {
+      border: 1px solid #FFCE31; }
 
 .blue-lock {
   color: #1A00A4; }
@@ -8047,7 +8050,7 @@ header {
       overflow: hidden; }
       .reviews__wrapper__item__header {
         display: flex;
-        margin: 34px;
+        margin: 20px;
         justify-content: space-between;
         font-family: 'Exo 2';
         font-style: normal;
@@ -8070,15 +8073,15 @@ header {
         .reviews__wrapper__item__header__name {
           line-height: 30px; }
       .reviews__wrapper__item__text {
-        margin: 0 34px;
+        margin: 0 25px;
         font-family: 'Exo 2';
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 108.5%;
         color: #F4F4F4; }
       .reviews__wrapper__item__autor {
-        margin: 34px;
+        margin: 24px;
         text-align: right; }
 
 .slider {
@@ -8247,7 +8250,7 @@ header {
   .main__quest {
     display: none; } }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   .global__btn {
     width: 300px; }
     .global__btn:hover {
@@ -8321,7 +8324,7 @@ header {
     background: transparent url("./../img/close.png") center/1em auto no-repeat !important; }
   .modal-dialog__room {
     margin-top: 0px;
-    margin-left: -170px;
+    margin-left: -180px;
     left: 50%;
     top: 2%; }
   .modal__contact {
@@ -8350,7 +8353,9 @@ header {
     font-size: 22px; }
   .room-lord {
     padding: 26px 10px;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 360px !important;
+    height: auto !important; }
     .room-lord__col {
       width: 100%; }
     .room-lord__foto {
@@ -8530,6 +8535,8 @@ header {
           .action__item__flex__btn button {
             width: 131px;
             height: 28px; }
+  .slick-track {
+    height: 330px; }
   .reviews {
     padding-bottom: 100px; }
     .reviews__header {
@@ -8537,9 +8544,9 @@ header {
     .reviews__wrapper {
       position: relative; }
       .reviews__wrapper__item {
-        width: 302px;
-        height: 218px;
-        margin: 15px; }
+        width: 325px;
+        height: 300px;
+        margin: 10px; }
         .reviews__wrapper__item__header {
           display: flex;
           margin: 7px;
@@ -8568,7 +8575,7 @@ header {
           margin: 0 7px;
           font-size: 14px; }
         .reviews__wrapper__item__autor {
-          margin: 34px;
+          margin: 24px;
           text-align: right; }
   .slick-prev {
     left: 14px;
@@ -8622,8 +8629,8 @@ header {
     margin-right: 11px;
     margin-top: 37px; }
   .slick-slide {
-    width: 302px;
-    height: 218px;
+    width: 330px;
+    height: 220px;
     margin: 15px; }
   .contact {
     padding-bottom: 24px; }

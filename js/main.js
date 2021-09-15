@@ -21382,7 +21382,7 @@ return Popper;
 
 
 $('.reviews__wrapper').slick({
-	// infinite: true,
+	infinite: true,
 	slidesToShow: 2,
 	slidesToScroll: 1,
 	variableWidth: true,
